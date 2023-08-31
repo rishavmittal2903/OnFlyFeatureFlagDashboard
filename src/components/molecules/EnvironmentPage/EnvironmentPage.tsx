@@ -48,7 +48,7 @@ const EnvironmentPage = () => {
         delete filteredProjectData["_id"];
         filteredProjectData.environments.push(envData);
         dispatch(toggleLoader(true));
-        saveProject(filteredProjectData, dispatch);
+        saveProject(filteredProjectData, dispatch, environmentName);
         setEnvFlagPopup(false);
       }
     }

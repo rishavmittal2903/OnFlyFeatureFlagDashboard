@@ -7,6 +7,7 @@ import {
 } from "../../constants/ApiEndpoint";
 import { IProjectDetail } from "../../shared/interfaces/IProjectDetail";
 import { LOAD_PROJECTS, TOGGLE_PROJECT_POPUP } from "../actionType/ProjectActionType";
+import { store } from "../root/root";
 import { bindDefaultProjectId, bindOrganizationId, toggleLoader } from "./commonAction";
 
 export const bindProjects = (projectData: Array<IProjectDetail>) => ({
@@ -20,8 +21,9 @@ export const toggleProjPopup = (isProjectPopUpOpen: boolean) => ({
   });
 
 export const getProjectsByOrgId = (orgId: string, dispatch: any) => {
+  const {email} = store.getState().user
   return axios
-    .get(loadProjectsByOrgIdUrl(orgId))
+    .get(loadProjectsByOrgIdUrl(orgId,email))
     .then((res: any) => {
       if (res && res?.data) {
         dispatch(bindProjects(res.data));
@@ -35,9 +37,9 @@ export const getProjectsByOrgId = (orgId: string, dispatch: any) => {
     });
 };
 
-export const saveProject = (projectData: IProjectDetail, dispatch: any) => {
+export const saveProject = (projectData: IProjectDetail, dispatch: any,envType:string) => {
   return axios
-    .post(saveProjectUrl(), projectData)
+    .post(saveProjectUrl(), projectData,{headers:{"envtype":envType}})
     .then((res) => {
       if (res && res.status === 200) {
         toast.success(`${projectData.projectName} project updation successfully.`)

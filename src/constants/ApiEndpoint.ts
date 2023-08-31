@@ -1,6 +1,6 @@
 const baseUrl:string = process.env.REACT_APP_BASE_URL || "";
 export const loadOrganizationUrl=(emailId:string)=>`${baseUrl}/api/v1/organizations/${emailId}`
-export const loadProjectsByOrgIdUrl=(orgId:string)=>`${baseUrl}/api/v1/projects/${orgId}`
+export const loadProjectsByOrgIdUrl=(orgId:string,emailId:string)=>`${baseUrl}/api/v1/allProjects/${emailId}/${orgId}`
 export const saveOrganizationUrl=()=>`${baseUrl}/api/v1/organization`
 export const saveProjectUrl=()=>`${baseUrl}/api/v1/project`
 export const deleteOrganizationUrl=(id:string)=>`${baseUrl}/api/v1/organization/${id}`

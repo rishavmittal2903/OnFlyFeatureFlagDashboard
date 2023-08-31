@@ -11,6 +11,7 @@ import {
 import {
   getActiveFlags,
   getAllFlags,
+  getClientId,
   getFilteredProjectData,
   getFlagData,
   getIndex,
@@ -43,7 +44,7 @@ const FeatureFlagPage = () => {
 
   useEffect(() => {
     setEnvironment(defaultEnvType);
-     // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, [defaultEnvType]);
 
   const environmentChangeHandler = (event: any) => {
@@ -59,7 +60,11 @@ const FeatureFlagPage = () => {
         event.target.checked;
       delete cloneData["_id"];
       dispatch(toggleLoader(true));
-      saveProject(cloneData, dispatch);
+      saveProject(
+        cloneData,
+        dispatch,
+        environment
+      );
     }
   };
   const saveFeatureFlag = (featureFlagName: string, value: boolean) => {
@@ -92,7 +97,11 @@ const FeatureFlagPage = () => {
         );
         delete filteredProjectData["_id"];
         dispatch(toggleLoader(true));
-        saveProject(filteredProjectData, dispatch);
+        saveProject(
+          filteredProjectData,
+          dispatch,
+          environment,
+        );
         setFeatureFlagPopup(false);
       }
     }
@@ -171,9 +180,7 @@ const FeatureFlagPage = () => {
           </div>
         </div>
       </div>
-      {filteredProjectData &&
-      filteredProjectData?.environments.length
-       ? (
+      {filteredProjectData && filteredProjectData?.environments.length ? (
         <div className="cardFeatureContainer">
           <div className="cardFeatureWrap">
             <div className="featurePageMainContent">
@@ -202,7 +209,9 @@ const FeatureFlagPage = () => {
               </div>
 
               <div className="featureFlagWrap">
-                {getFlagData(filteredProjectData, environment).length ? <div className="headTitle">Feature Flags</div>:null}
+                {getFlagData(filteredProjectData, environment).length ? (
+                  <div className="headTitle">Feature Flags</div>
+                ) : null}
                 {getFlagData(filteredProjectData, environment).map(
                   (flag: IFlagData, indexFlag: number) => {
                     return (

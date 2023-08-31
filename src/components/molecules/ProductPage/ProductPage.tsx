@@ -66,7 +66,7 @@ const ProductPage = (props: IProps) => {
       {
       filteredProjectData?.environments.push(environment);
       dispatch(toggleLoader(true));
-      saveProject(filteredProjectData, dispatch);
+      saveProject(filteredProjectData, dispatch, value);
       }
       setEnvModalPopup(false);
     }
@@ -87,7 +87,7 @@ const ProductPage = (props: IProps) => {
       filteredProjectData[userType]?.push(roleData);
       delete filteredProjectData["_id"];
       dispatch(toggleLoader(true));
-      saveProject(filteredProjectData, dispatch);
+      saveProject(filteredProjectData, dispatch,"");
     }
   };
   return (

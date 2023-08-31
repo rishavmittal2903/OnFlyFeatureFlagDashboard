@@ -54,19 +54,19 @@ const ProductsPage = () => {
         updatedBy: "",
         updatedOn: "",
       };
-      saveProject(projectData, dispatch);
+      saveProject(projectData, dispatch,"");
     }
   };
   const handleProjFlag = (flag: boolean) => {
     dispatch(toggleProjPopup(flag));
   };
-  const deleteProjHandler = (id: string, name: string) => {
+  const deleteProjHandler = (id: string, name: string,evnttype?:string) => {
     dispatch(toggleLoader(true));
     deleteProjectByOrgIdAndProjId(defaultOrgId, id, name, dispatch);
   };
   const projRoleHandler=(projData:IProjectDetail)=>{
     dispatch(toggleLoader(true));
-    saveProject(projData,dispatch);
+    saveProject(projData,dispatch,"");
   }
   return (
     <div className="organizationContainer">
