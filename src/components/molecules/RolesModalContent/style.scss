@@ -1,0 +1,95 @@
+.roleModalContainer{
+  display: flex;
+  gap: 30px;
+  height: 500px;
+}
+
+.roleTitle{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.roleContent{
+  display: flex;
+    flex-direction: column;
+    padding: 27px;
+    gap: 30px;
+}
+.roleFieldBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.roleSideContent{
+  background: #267cc9;
+  width: 25%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.roleSave{
+  button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background: #136cba;
+    color: #fff;
+    border: none;
+  }
+}
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.role-search-input-field {
+    width: 349px;
+    border: 1px solid #80808069;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  
+
+  
+  .role-search-input-field .searchicons {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .role-search-input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+  }
+
+  .roleSearchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+  }
+  
+  .role-search-input-field::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }

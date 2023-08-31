@@ -1,0 +1,107 @@
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    background: #203247f7;
+    width: 250px;
+    height: 100vh;
+    justify-content: space-between;
+    border-right: 2px solid #050e17;
+}
+.welcomeContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background: rgba(2,120,213,.8);
+    height: 30px;
+    color: #fff;
+    padding-left: 2rem;
+    a{
+text-decoration: none;
+color: #fff;
+    }
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+}
+
+HTML CSSResult Skip Results Iframe
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+.select {
+    select{
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+    }
+}
+/* Remove IE arrow */
+.select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+    position: relative;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ffffff82;
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    background-color: #ffffff78;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #fff;
+}
+
+.projectOrgSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 10px;
+}
+.white{
+    color:#ffffff8a;
+    font-size:12px;
+}
+
+.selectedFlag{
+  background: rgba(2,120,213,.8);
+}
+.notSelected{
+  background: none;
+
+}
+/* Other styles*/

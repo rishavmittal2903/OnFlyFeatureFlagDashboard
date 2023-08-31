@@ -1,0 +1,155 @@
+.feeatureContainer{
+
+}
+.featureSelect {
+    select{
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #000;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+    }
+}
+/* Remove IE arrow */
+.featureSelect::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.featureSelect {
+    position: relative;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #89898982;
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* Arrow */
+.featureSelect::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 10px;
+    background-color: #ffffff78;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+
+.featureHead{
+    width: 100%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    background: #fff;
+    justify-content: space-between;
+    border: 1px solid #877e7e87;
+}
+
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.noProjectFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000d4;
+}
+
+.cardFeatureContainer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.cardFeatureWrap{
+    display: flex;
+    gap:10px;
+}
+
+.featurePageMainContent {
+    display: flex;
+    width: 100%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .flagCard {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: #fff;
+    box-shadow: 1px 1px 1px 1px #80808052;
+    cursor: pointer;
+    background: #fff;
+    margin-top: 3rem;
+  }
+  
+  .flagCount {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .featurePageMainContent{
+    display: flex;
+    width: 100%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    gap:10px;
+  }
+
+  .flex{
+      display: flex;
+      gap:10px;
+  }
+
+  .environmentFeatureCard{
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: #fff;
+    box-shadow: 1px 1px 1px 1px #80808052;
+    cursor: pointer;
+    background: #fff;
+    margin-top: 3rem;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .featureFlagWrap{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    gap: 10px;
+  }
+  .headTitle{
+    font-size:16px;
+    font-weight: 600;
+    margin:10px 0 10px 0;
+  }
+
+  .backBtn{
+    cursor: pointer;
+  }

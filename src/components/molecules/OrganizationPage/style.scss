@@ -1,0 +1,118 @@
+.organizationContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #d6c7c71f;
+
+}
+.cardConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input-field {
+  width: 349px;
+  border: 1px solid #80808069;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.plus{
+    margin-top:6px;
+}
+
+.search-input-field .searchicons {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.search-input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+
+.search-input-field::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: 1.5px solid #8080803d;
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.filterContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1.5px solid #8080803d;
+  background: #fff;
+}
+
+.orgBtn {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.orgActionBtn {
+  background: #136cba;
+  border: none;
+  height: 30px;
+  width: 160px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.cardContainer{
+    display: flex;
+}
+.cardWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

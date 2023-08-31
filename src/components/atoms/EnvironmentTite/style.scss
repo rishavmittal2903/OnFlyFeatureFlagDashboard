@@ -1,0 +1,43 @@
+.environmentCardContainer{
+    display: flex;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #aca3a36b;
+    height: 70px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    width: 96%;
+}
+
+.environmentCardContainer:hover{
+    border:1px solid #347ed9;
+  }
+.environmentNameSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:30%;
+    .envTitle{
+        color:#000;
+    }
+    .envName{
+        color:grey;
+    }
+}
+
+.environmentMenuSection{
+    font-size: 22px;
+}
+
+.ellipsis{
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.secretContainer{
+    width:60%;
+    display: flex;
+    z-index:9999;
+}

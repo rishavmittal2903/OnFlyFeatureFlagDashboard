@@ -1,0 +1,65 @@
+.navContainer{
+    display: flex;
+    flex-direction: column;
+    background: #0a3364;
+    width: 90px;
+    height: 100vh;
+    justify-content: space-between;
+    border-right: 2px solid #070b106e;
+}
+
+.navBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom:1px solid #ffffff4a;
+}
+
+.navBox:hover{
+    background: #07182b;
+}
+
+.naVicons{
+    width: 20px;
+    height: 40px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-top:1px solid #ffffff4a;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile > div{
+    border-radius: 29px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile:hover{
+    background:#07182b;
+
+}
+.selected{
+    background: #07182b;
+}

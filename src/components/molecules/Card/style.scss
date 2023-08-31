@@ -1,0 +1,99 @@
+.orgCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 230px;
+  background: #fff;
+  justify-content: space-around;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 4px #8080805c;
+  margin-left: 10px;
+}
+
+.orgCardContainer:hover{
+  border:1px solid #347ed9;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-size: 18px;
+  margin-top: -2rem;
+}
+
+.cardName {
+  display: flex;
+  padding-left: 20px;
+  color: grey;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -6rem;
+}
+
+.cardFooter {
+  display: flex;
+  margin-bottom: -30px;
+  justify-content: space-evenly;
+}
+
+.cardProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cardProjectIcon {
+  width: 25px;
+  height: 25px;
+}
+.cardMembers {
+  display: flex;
+  flex-direction: column;
+  // margin-left: 4rem;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.members div {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initial {
+  background: black;
+  border: 1px solid grey;
+  color: #fff;
+  z-index: 38;
+}
+
+.cardMenu {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.memberPlus {
+  border: 2px solid #008fff;
+  margin-left: -5px;
+}
+
+.mrgnLft2{
+  // margin-left:2rem;
+}
+.cardTitle{
+  color:#008fffde;
+  cursor: pointer;
+}

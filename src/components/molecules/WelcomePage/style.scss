@@ -1,0 +1,39 @@
+.welcomeHomeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.welcomeText {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.subText {
+  font-size: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.actionButton {
+  margin-top: 4rem;
+  width: 130px;
+  height: 40px;
+  background: #136cba;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconPlus{
+  margin-top: 4px;
+  font-size: 20px;
+
+}

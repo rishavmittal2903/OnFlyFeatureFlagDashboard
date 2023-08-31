@@ -1,0 +1,56 @@
+.environmentContainer{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 3rem;
+  gap: 20px;
+}
+
+.heading{
+  font-size: 22px;
+    font-weight: bold;
+}
+
+.subHeading{
+  font-size: 14px;
+  color:#555050d4;
+}
+
+.envFieldBox{
+    margin-top: 2rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    color:#555050d4;
+    input{
+      margin-top: 1rem;
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid grey;
+      padding: 10px;
+    }
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 4rem;
+    button{
+        display: flex;
+        width: 150px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        background: #267cc9;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .cancel{
+        background: #b6babd;
+
+      }
+  }

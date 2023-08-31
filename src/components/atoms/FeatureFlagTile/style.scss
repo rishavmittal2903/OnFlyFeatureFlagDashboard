@@ -1,0 +1,29 @@
+.feeatureTileCardContainer{
+    display: flex;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #aca3a32b;
+    height: 70px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.featureTileNameSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .featureTitle{
+        color:#000;
+    }
+    .featureFlagName{
+        color:grey;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.featureMenuSection{
+    font-size: 22px;
+}
