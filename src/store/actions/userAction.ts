@@ -36,7 +36,7 @@ export const signInUser = (
     .post(signInUserUrl, { email:emailId, password })
     .then((res) => {
       if (res && res.status === 200) {
-        dispatch(bindUserData({...res.data, isAuthenticated:true}));
+        dispatch(bindUserData({...res.data[0], isAuthenticated:true}));
       } else {
         toast.error(res.data);
       }

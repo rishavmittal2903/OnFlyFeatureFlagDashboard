@@ -18,11 +18,13 @@ const App = () => {
   );
   const dispatch = useDispatch();
   React.useEffect(() => {
+    if(email){
     dispatch(toggleLoader(true));
     getOragnizationsData(email, dispatch);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     // eslint-disable-next-line
-  }, [organizationData.length]);
+  }, [organizationData.length,email]);
   React.useEffect(() => {
     if (organizationData.length) {
       dispatch(toggleLoader(true));
