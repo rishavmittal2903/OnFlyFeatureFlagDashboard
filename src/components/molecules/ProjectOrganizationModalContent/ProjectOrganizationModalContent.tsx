@@ -77,7 +77,7 @@ const ProjectOrganizationModalContent = (props: IProps) => {
       <div className="orgDetailSection">
         {value && (
           <Card
-            title={"Organization Name"}
+            title={"Project Name"}
             subTitle={value}
             key={value}
             project={0}

@@ -13,8 +13,8 @@ const DetailPage = () => {
       {isHomePage && (
         <WelcomePage
           title={` Welcome ${firstName}, let's get you started!`}
-          subTitle="Take your software delivery processes to the next level using our
-          Harness modules"
+          subTitle="Take your feature flag processes to the next level using our
+           modules"
           btnName="Organization"
           onClickHandler={()=>navigate('/organization')}
         />

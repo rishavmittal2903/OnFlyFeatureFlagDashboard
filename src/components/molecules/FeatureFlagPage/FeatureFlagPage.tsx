@@ -11,7 +11,6 @@ import {
 import {
   getActiveFlags,
   getAllFlags,
-  getClientId,
   getFilteredProjectData,
   getFlagData,
   getIndex,
